@@ -1,0 +1,13 @@
+// BREAKPOINT
+
+@mixin bp($mq) {
+	@media only screen and ($mq) {
+		@content;
+	}
+}
+
+@mixin bpm($mq, $mq2) {
+	@media only screen and ($mq) and ($mq2) {
+		@content;
+	}
+}
